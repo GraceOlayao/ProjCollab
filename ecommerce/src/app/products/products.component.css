@@ -1,0 +1,16 @@
+.mb-3{
+    margin-top: 20px;
+}
+.col-lg-3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.btn{
+    background-color: #C38154; 
+    border: none;
+}
+
+.btn:hover{
+    background-color:#884A39;
+    transition: 0.5s;
+}

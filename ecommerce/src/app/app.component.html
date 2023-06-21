@@ -1,0 +1,52 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-top">
+  <div class="container">
+    <a class="navbar-brand fs-2 fw-bold" href="#"><i class="fa fa-cart-shopping fs-2" style="color: black"></i><span class="textBlur"> <img class="logo" src="assets\logo.png" ></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!--Toogle-->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Nav Items-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+
+          <li class="nav-item ">
+            <a class="nav-link fw-semibold text-uppercase me-1 text-danger" href="Home">
+              home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link  fw-semibold text-uppercase textBlur  me-1" href="Products" >
+              Products
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link  fw-semibold text-uppercase textBlur  me-1" href="#">
+              About
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-search-plus fs-5"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-shopping-basket fa-shake fs-5"></i>
+            </a>
+          </li>
+
+        </ul>
+    </div>
+  </div>
+</nav>
+<section  id="product">
+  <div class="contaner">
+    <router-outlet></router-outlet>
+  </div>
+</section>

@@ -1,0 +1,52 @@
+<section id="product">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="productHeading text-center">
+                    <h2 class="mb-3">Exclusive Products</h2>
+
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li><a href="#" class="m-4 text-decoration-none text-danger fw-semibold">New Arrival</a></li>
+                        <li><a href="#" class="m-4 text-decoration-none text-black fw-semibold">Best Seller</a></li>
+                        <li><a href="#" class="m-4 text-decoration-none text-black fw-semibold">Featured</a></li>
+                        <li><a href="#" class="m-4 text-decoration-none text-black fw-semibold">Special Offer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3" *ngFor="let product of products">
+                <div class="box-shadow">
+                    <div class="card">
+                       <img [src]='product.image'/>
+                        <div class="card-body">
+                            <h5 class="card-title">{{product.name}}</h5>
+                            <p class="card-text">
+                                <span class="text-danger fw-semibold me-2">P{{product.discountedPrice}}</span>
+                                <del>P{{product.origPrice}}</del>
+                                <span class="text-success ms-2">
+                                    20% Off
+                                </span>
+                            </p>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <span><i class="fa fa-star m-0" style="color: #f1f50f; "></i></span>
+                                    <span><i class="fa fa-star m-0" style="color: #f1f50f; "></i></span>
+                                    <span><i class="fa fa-star m-0" style="color: #f1f50f; "></i></span>
+                                    <span><i class="fa fa-star m-0" style="color: #f1f50f; "></i></span>      
+                                    <span><i class="fa fa-star m-0" style="color: #f1f50f; "></i></span>                                                 
+                                </div>
+								<div class="col-6 text-end">
+                                            <button class="btn btn-success">Add to Cart </button>
+                                 </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+                      
+              
+        </div>
+    </div>
+</section>
