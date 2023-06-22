@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service'
+import { CartService } from '../services/cart.service';
+
 
 @Component({
   selector: 'app-products',
@@ -9,7 +12,7 @@ export class ProductsComponent {
 
   products : any
 
-  constructor(){
+  constructor(private productService: ProductService, private cartService: CartService){
     this.products=[
       {
         "id":1,
@@ -71,8 +74,9 @@ export class ProductsComponent {
 
   }
 
-  ngOnInit(){
-
+  ngOnInit(){}
+  addtoCart(item:any){
+    this.cartService.addtoCart(item);
   }
 
 }

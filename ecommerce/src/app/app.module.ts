@@ -9,30 +9,31 @@ import { SaleComponent } from './pages/sale/sale.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ProductsComponent } from './products/products.component';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { ErrorComponent } from './pages/error/error.component';
 
-const appRoute: Routes = [
-  {path:'', redirectTo: 'Home', pathMatch: 'full'},
-  {path:'Home', component: HomeComponent},
-  {path:'Products', component: ProductsComponent}
-]
 
 @NgModule({
+  exports: [RouterModule],
+
   declarations: [
     AppComponent,
     HomeComponent,
     CartComponent,
     SaleComponent,
-    ProductsComponent
+    ProductsComponent,
+    ErrorComponent,
   ],
-  
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
+
   providers: [],
-  bootstrap: [AppComponent]
+
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
