@@ -6,15 +6,15 @@
                     <h2 class="mb-3">Exclusive Products</h2>
 
                     <ul class="list-unstyled d-flex justify-content-center">
-                        <li><a href="#" class="m-4 text-decoration-none text-danger fw-semibold">New Arrival</a></li>
-                        <li><a href="#" class="m-4 text-decoration-none text-black fw-semibold">Best Seller</a></li>
-                        <li><a href="#" class="m-4 text-decoration-none text-black fw-semibold">Featured</a></li>
-                        <li><a href="#" class="m-4 text-decoration-none text-black fw-semibold">Special Offer</a></li>
+                        <li><a (click)="filter('')" class="m-4 text-decoration-none text-danger fw-semibold">New Arrival</a></li>
+                        <li><a (click)="filter('top')" class="m-4 text-decoration-none text-black fw-semibold">Tops</a></li>
+                        <li><a (click)="filter('shorts')" class="m-4 text-decoration-none text-black fw-semibold">Shorts</a></li>
+                        <li><a (click)="filter('accesories')" class="m-4 text-decoration-none text-black fw-semibold">Accesories</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-lg-3" *ngFor="let product of products">
+            <div class="col-lg-3" *ngFor="let product of filterCategory">
                 <div class="box-shadow">
                     <div class="card">
                        <img [src]='product.image'/>
@@ -37,7 +37,7 @@
                                     <span><i class="fa fa-star m-0" style="color: #f1f50f; "></i></span>                                                 
                                 </div>
 								<div class="col-6 text-end">
-                                            <button class="btn btn-success" (click)=addtoCart(product)>Add to Cart </button>
+                                            <button style="font-size: 12px;" class="btn btn-success" (click)=addtoCart(product)>ADD TO CART</button>
                                  </div>
                             </div>
                         </div>

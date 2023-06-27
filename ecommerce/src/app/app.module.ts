@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { ProductsComponent } from './products/products.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './pages/error/error.component';
+import { HeaderComponent } from './pages/header/header.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ErrorComponent } from './pages/error/error.component';
     SaleComponent,
     ProductsComponent,
     ErrorComponent,
+    HeaderComponent,
   ],
 
   imports: [
