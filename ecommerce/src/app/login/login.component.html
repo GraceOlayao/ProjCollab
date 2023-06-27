@@ -1,0 +1,31 @@
+<body>
+    <div class="wrapper" style="background-image: url('assets/Login/reg.jpg')">
+      <div class="inner">
+        <div class="image-holder">
+          <img src="assets/Login/reg1.jpg" alt="" />
+        </div>
+        <form #myLogin="ngForm" (ngSubmit)="doLogin(myLogin.value)">
+          <h3>Login Form</h3>
+          
+         
+          <div class="form-wrapper">
+              <input type="text" placeholder="Username" class="form-control" name="un" [(ngModel)]="data.un"/>
+              <i class="zmdi zmdi-account"></i>
+          </div>
+          <div class="form-wrapper">
+            <input type="password" placeholder="Password" class="form-control" name="pw" [(ngModel)]="data.pass"/>
+            <i class="zmdi zmdi-lock"></i>
+          </div>
+  
+          <button type="submit">
+            Login
+            <i class="zmdi zmdi-arrow-right"></i>
+          </button>
+          <h6>Don't have an account? <a class="sign" routerLink="/Sign" routerLinkActive="active" ariaCurrentWhenActive="page"> Register Here</a></h6>
+        </form>
+   
+      </div> 
+    </div>
+  </body>
+  
+  

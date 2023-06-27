@@ -12,6 +12,8 @@ import { ProductsComponent } from './products/products.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './pages/error/error.component';
 import { HeaderComponent } from './pages/header/header.component';
+import { LoginComponent } from './login/login.component';
+import { SignComponent } from './sign/sign.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { HeaderComponent } from './pages/header/header.component';
     ProductsComponent,
     ErrorComponent,
     HeaderComponent,
+    LoginComponent,
+    SignComponent,
   ],
 
   imports: [

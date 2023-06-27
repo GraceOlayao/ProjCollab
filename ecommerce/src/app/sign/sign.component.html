@@ -1,0 +1,53 @@
+<body>
+    <div class="wrapper" style="background-image: url('assets/Login/reg.jpg')">
+      <div class="inner">
+        <div class="image-holder">
+          <img src="assets/Login/reg1.jpg" alt="" />
+        </div>
+        <form #myForm="ngForm" (ngSubmit)="doRegistration(myForm.value)">
+          <h3>Registration Form</h3>
+          <div class="form-group">
+            <input type="text" placeholder="First Name" class="form-control" name="fn" [(ngModel)]="data.fn" />
+            <input type="text" placeholder="Last Name" class="form-control" name="ln" [(ngModel)]="data.ln"/>
+          </div>
+          <div class="form-wrapper">
+            <select name="" id="" class="form-control" name="gender" [(ngModel)]="data.gender">
+              <option value="" disabled selected>Gender</option>
+              <option value="male">Male</option>
+              <option value="femal">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+          </div>
+          <div class="form-wrapper">
+            <input
+              type="text"
+              placeholder="Complete Address"
+              class="form-control"
+              name="Add"
+              [(ngModel)]="data.Add"
+            />
+            <i class="zmdi zmdi-email"></i>
+          </div>
+          <div class="form-wrapper">
+            <input type="text" placeholder="Email Address" class="form-control" name="email" [(ngModel)]="data.email"/>
+            <i class="zmdi zmdi-account"></i>
+          </div>
+          <div class="form-wrapper">
+              <input type="text" placeholder="Username" class="form-control"  name="un" [(ngModel)]="data.un"/>
+              <i class="zmdi zmdi-account"></i>
+          </div>
+          <div class="form-wrapper">
+            <input type="password" placeholder="Password" class="form-control" name="pass" [(ngModel)]="data.pass"/>
+            <i class="zmdi zmdi-lock"></i>
+          </div>
+          <button type="submit">
+            Register
+            <i class="zmdi zmdi-arrow-right"></i>
+          </button>
+          <h6>Already have an account? <a class="sign" routerLink="/Log" routerLinkActive="active" ariaCurrentWhenActive="page"> Login Here</a></h6>
+        </form>
+      </div>
+    </div>
+  </body>
+  
