@@ -14,6 +14,7 @@ import { ErrorComponent } from './pages/error/error.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { LoginComponent } from './login/login.component';
 import { SignComponent } from './sign/sign.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { SignComponent } from './sign/sign.component';
     HeaderComponent,
     LoginComponent,
     SignComponent,
+    FooterComponent,
   ],
 
   imports: [

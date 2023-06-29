@@ -31,4 +31,8 @@ export class HeaderComponent implements OnInit {
       debugger;
     });
   }
+
+  toHome(){
+    document.getElementById("")
+  }
 }
