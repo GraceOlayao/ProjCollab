@@ -395,3 +395,13 @@ svg {
     transform: rotateZ( -15deg)
   }
 }
+
+.center .btn{
+  font-size: 14px !important;
+  margin-top: 20px !important;
+  font-weight: 400;
+  padding: 12px 72px;
+  border-radius: 3px !important;
+  background-color: #C38154;
+  border: none;
+}
