@@ -21,7 +21,7 @@ export class SignComponent {
     pass: '',
   };
   doRegistration(Values: any) {
-    this.user_records = JSON.parse(localStorage.getItem('users') || '{}');
+   this.user_records = JSON.parse(localStorage.getItem('users') || '{}');
     if (
       this.user_records.some((v) => {
         return v.email == this.data.email;
